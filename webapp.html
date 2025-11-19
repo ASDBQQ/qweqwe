@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="UTF-8">
-<title>Telegram WebApp Activated</title>
-<script src="https://telegram.org/js/telegram-web-app.js"></script>
-<style>
-body {
-  background: #111;
-  color: white;
-  font-family: Arial, sans-serif;
-  text-align: center;
-  padding-top: 40px;
-}
-button {
-  background: #0088cc;
-  border: none;
-  padding: 10px 20px;
-  font-size: 18px;
-  color: white;
-  border-radius: 8px;
-  cursor: pointer;
-}
-button:hover {
-  opacity: 0.9;
-}
-</style>
+    <meta charset="utf-8" />
+    <title>Stars Bot WebApp</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Telegram Mini App API -->
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
+    <style>
+        body {
+            background: #111;
+            color: white;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+            text-align: center;
+        }
+        button {
+            padding: 15px 25px;
+            font-size: 18px;
+            margin-top: 20px;
+            background: #2ea6ff;
+            color: white;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-<h1>🎉 WebApp Активирован</h1>
-<p>Теперь бот поддерживает Telegram Stars.</p>
-<button onclick="Telegram.WebApp.close();">
-Закрыть WebApp
-</button>
+
+    <h2>⭐ Stars WebApp активирован</h2>
+    <p>Теперь Telegram считает ваш бот Mini App.</p>
+
+    <button onclick="Telegram.WebApp.close()">Закрыть</button>
+
+    <script>
+        Telegram.WebApp.ready();
+        Telegram.WebApp.expand();
+    </script>
+
 </body>
 </html>
